@@ -1,0 +1,32 @@
+<!--{template mlogin:header}-->
+
+  <div class="flipInX wall">
+    <a href="javascript:window.history.back();" class="backbtn"><i class="sicon-arrow-left"></i>返回</a>
+    <div class="head"><i class="icon icon-lock"></i></div>
+    <h1>重置密码</h1>
+    <div>
+        <div id="errmsgdiv" class="mwt-wall mwt-wall-danger"></div>
+        <div class="mlogin-block">
+          <input type="password" class="mwt-field" id="fm-oldpass" placeholder="原密码">
+        </div>
+        <div class="mlogin-block">
+          <input type="password" class="mwt-field" id="fm-newpass1" placeholder="新密码">
+        </div>
+        <div class="mlogin-block">
+          <input type="password" class="mwt-field" id="fm-newpass2" placeholder="确认新密码">
+        </div>
+        <button id="subbtn" class="mwt-btn-block mwt-btn mwt-btn-primary">提交</button>
+    </div>
+  </div>
+
+<script>
+jQuery(document).on('ready',function(){
+    require.config({
+        baseUrl: '{$plugin_path}/template/src/'
+    });
+    require(['resetpass/page'], function(page){
+        page.execute();
+    });
+});
+</script>
+<!--{template mlogin:footer}-->

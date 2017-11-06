@@ -1,0 +1,12 @@
+/* 管理后台页面样式 */
+* {
+	font-family:"Lucida Grande", Verdana, Lucida, Helvetica, Arial, 'Simsun', sans-serif;
+	-webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    font-smoothing: inherit;
+}   
+.floattop {z-index:0;}
+.tb2 i {font-size:16px;padding:5px;cursor:pointer;border:solid 1px #ddd;color:#333;width:16px;height:16px;text-align:center;display:inline;}
+.fill-layout {position:absolute;top:40px;bottom:10px;left:20px;right:20px;}
+.mwt-text-search>input {background:#fff;}
+i.fa-question-circle {padding:0 2px;border:none;color:#555;}

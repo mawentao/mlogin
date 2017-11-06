@@ -1,0 +1,57 @@
+/* base.css, (c) 2017 mawentao */
+body {background-color:#666;background:url(bg.png);}
+.footer {
+    text-align:center;font-size:12px;color:#eee;margin-top:30px;
+}
+.wall {width:440px;padding:30px 80px 40px;
+    margin:80px auto 20px;
+    border-radius: 4px;
+    z-index: 2;
+    box-shadow: 0 0 20px #bbb;
+    background:#fff;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    position:relative;
+}
+.head {text-align:center;}
+.head i {
+    padding:15px;
+    border: 1px solid #ccc;color:#999;
+    border-radius: 300px;
+    font-size:24px;
+    text-align: center;
+    display:inline-block;
+}
+h1 {font-size:18px;margin:10px 0 20px;text-align:center;color:#4a4c5b;
+    font-weight: normal;
+    font-family: 'heiti';
+}
+
+.mlogin-block {margin-bottom:15px;}
+.mlogin-block .mwt-field {height:40px;}
+.scode-field {width:150px;}
+.scode-img {vertical-align:bottom;cursor:pointer;float:right;}
+.mwt-btn-block {height:40px;}
+#errmsgdiv {display:none;margin-bottom:15px;}
+
+.backbtn {color:#999;text-decoration:none;font-size:12px;position:absolute;top:20px;left:20px;}
+.backbtn:hover {color:#357ebd;}
+.backbtn i {margin-right:2px;font-size:13px;vertical-align:middle;}
+
+
+
+/*
+.mwt-field:focus {
+    border-color: #ff9600;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(250,175,0,0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(250,175,0,0.6);
+}
+
+.mwt-btn-primary {color: #fff;background-color:#ff9600;border-color:#ff9600;}
+.mwt-btn-primary:hover, .mwt-btn-primary:focus, .mwt-btn-primary:active, .mwt-btn-primary.active, .open {
+    color:#fff; background-color: #ff8800; border-color: #ff9600;
+}
+*/

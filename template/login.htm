@@ -1,0 +1,32 @@
+<!--{template mlogin:header}-->
+
+  <div class="flipInX wall">
+    <div class="head"><i class="sicon-user"></i></div>
+    <h1>用户登录</h1>
+    <div>
+        <div id="errmsgdiv" class="mwt-wall mwt-wall-danger"></div>
+        <div class="mlogin-block">
+          <input type="text" class="mwt-field" id="fm-username" placeholder="用户名">
+        </div>
+        <div class="mlogin-block">
+          <input type="password" class="mwt-field" id="fm-userpass" placeholder="密码">
+        </div>
+        <div class="mlogin-block">
+          <input type="text" class="mwt-field scode-field" id="fm-scode" placeholder="验证码">
+          <img class="scode-img" src="{$plugin_path}/index.php?version=4&module=seccode" id="scodebtn">
+        </div>
+        <button id="loginbtn" class="mwt-btn-block mwt-btn mwt-btn-primary">登录</button>
+    </div>
+  </div>
+
+<script>
+jQuery(document).on('ready',function(){
+    require.config({
+        baseUrl: '{$plugin_path}/template/src/'
+    });
+    require(['login/page'], function(page){
+        page.execute();
+    });
+});
+</script>
+<!--{template mlogin:footer}-->
