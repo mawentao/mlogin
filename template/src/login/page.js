@@ -28,7 +28,7 @@ define(function(require){
             if (res.retcode!=0) {
                 jQuery('#errmsgdiv').html(res.retmsg).show();
             } else {
-                window.location.reload();
+                window.location = dz.siteurl;
             }   
         }); 
     }
