@@ -34,10 +34,11 @@ cpfiles api conf *.php *.xml class table model template cron
 ################################
 rm -rf $outdir/template/src
 mv $outdir/template/dist $outdir/template/$src
-sed -i "" "s/src\//$src\//g" $outdir/template/header.htm
-sed -i "" "s/src\//$src\//g" $outdir/template/login.htm
-sed -i "" "s/mwt3.2utf8 (http:\/\/10.3.70.15:8008\/discuz\/)/dz3.2utf8 (http:\/\/192.168.0.1\/dz)/g" $outdir/discuz_plugin_mlogin.xml
-sed -i "" "s/X3.2/X2.5,X3,X3.1,X3.2/g" $outdir/discuz_plugin_mlogin.xml
+sed -i "s/src\//$src\//g" $outdir/template/header.htm
+sed -i "s/src\//$src\//g" $outdir/template/login.htm
+sed -i "s/src\//$src\//g" $outdir/template/resetpass.htm
+sed -i "s/mwt3.2utf8 (http:\/\/10.3.70.15:8008\/discuz\/)/dz3.2utf8 (http:\/\/192.168.0.1\/dz)/g" $outdir/discuz_plugin_mlogin.xml
+sed -i "s/X3.2/X2.5,X3,X3.1,X3.2/g" $outdir/discuz_plugin_mlogin.xml
 ################################
 cd $outdir
 # 删除php文件中的所有注释代码
